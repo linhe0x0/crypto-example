@@ -1,0 +1,19 @@
+{
+  "name": "serve",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "sqrtthree <imsqrtthree@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@sqrtthree/koa-crypto": "^0.1.0",
+    "@sqrtthree/koa-crypto-exchange": "^0.1.0",
+    "@sqrtthree/koa-sign": "^0.1.0",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0"
+  }
+}

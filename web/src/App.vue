@@ -12,8 +12,8 @@ export default {
         .post('/signature/verify', {
           userID: 1,
         })
-        .then(() => {
-          alert('success')
+        .then((response) => {
+          alert(response.data)
         })
         .catch((err) => {
           alert(err.response.data.message)
