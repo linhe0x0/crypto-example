@@ -20,6 +20,29 @@
     "@babel/helper-validator-identifier" "^7.14.5"
     to-fast-properties "^2.0.0"
 
+"@sqrtthree/axios-use-crypto-exchange@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.nlark.com/@sqrtthree/axios-use-crypto-exchange/download/@sqrtthree/axios-use-crypto-exchange-0.1.0.tgz?cache=0&sync_timestamp=1626664019214&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40sqrtthree%2Faxios-use-crypto-exchange%2Fdownload%2F%40sqrtthree%2Faxios-use-crypto-exchange-0.1.0.tgz#2318fc537ef32f735f5d6dcaf46fcc42e8fcdee5"
+  integrity sha1-Ixj8U37zL3NfXW3K9G/MQuj83uU=
+  dependencies:
+    node-forge "~0.10.0"
+
+"@sqrtthree/axios-use-crypto@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.nlark.com/@sqrtthree/axios-use-crypto/download/@sqrtthree/axios-use-crypto-0.1.0.tgz#ae7bbfbe2ede6f9581f2e15705411b8494467995"
+  integrity sha1-rnu/vi7eb5WB8uFXBUEbhJRGeZU=
+  dependencies:
+    crypto-js "~4.0.0"
+    lodash "~4.17.21"
+
+"@sqrtthree/axios-use-sign@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.nlark.com/@sqrtthree/axios-use-sign/download/@sqrtthree/axios-use-sign-0.1.0.tgz?cache=0&sync_timestamp=1626665153889&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40sqrtthree%2Faxios-use-sign%2Fdownload%2F%40sqrtthree%2Faxios-use-sign-0.1.0.tgz#5e4cedba1542f9eafe510e014dce455ff03fc6b0"
+  integrity sha1-XkztuhVC+er+UQ4BTc5FX/A/xrA=
+  dependencies:
+    axios "~0.21.1"
+    crypto-js "~4.0.0"
+
 "@types/estree@^0.0.48":
   version "0.0.48"
   resolved "https://registry.nlark.com/@types/estree/download/@types/estree-0.0.48.tgz#18dc8091b285df90db2f25aa7d906cfc394b7f74"
@@ -109,7 +132,7 @@
   resolved "https://registry.nlark.com/@vue/shared/download/@vue/shared-3.1.4.tgz#c14c461ec42ea2c1556e86f60b0354341d91adc3"
   integrity sha1-wUxGHsQuosFVbob2CwNUNB2RrcM=
 
-axios@^0.21.1:
+axios@^0.21.1, axios@~0.21.1:
   version "0.21.1"
   resolved "https://registry.nlark.com/axios/download/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
   integrity sha1-IlY0gZYvTWvemnbVFu8OXTwJsrg=
@@ -138,7 +161,7 @@ consolidate@^0.16.0:
   dependencies:
     bluebird "^3.7.2"
 
-crypto-js@^4.0.0:
+crypto-js@~4.0.0:
   version "4.0.0"
   resolved "https://registry.npm.taobao.org/crypto-js/download/crypto-js-4.0.0.tgz?cache=0&sync_timestamp=1581509173139&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcrypto-js%2Fdownload%2Fcrypto-js-4.0.0.tgz#2904ab2677a9d042856a2ea2ef80de92e4a36dcc"
   integrity sha1-KQSrJnep0EKFai6i74DekuSjbcw=
@@ -235,15 +258,15 @@ loader-utils@^1.1.0:
     emojis-list "^3.0.0"
     json5 "^1.0.1"
 
-lodash-es@^4.17.21:
-  version "4.17.21"
-  resolved "https://registry.npm.taobao.org/lodash-es/download/lodash-es-4.17.21.tgz?cache=0&sync_timestamp=1613836838613&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Flodash-es%2Fdownload%2Flodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
-  integrity sha1-Q+YmxG5lkbd1C+srUBFzkMYJ4+4=
-
 lodash.camelcase@^4.3.0:
   version "4.3.0"
   resolved "https://registry.npm.taobao.org/lodash.camelcase/download/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
   integrity sha1-soqmKIorn8ZRA1x3EfZathkDMaY=
+
+lodash@~4.17.21:
+  version "4.17.21"
+  resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha1-Z5WRxWTDv/quhFTPCz3zcMPWkRw=
 
 lru-cache@^5.1.1:
   version "5.1.1"
@@ -276,7 +299,7 @@ nanoid@^3.1.23:
   resolved "https://registry.nlark.com/nanoid/download/nanoid-3.1.23.tgz?cache=0&sync_timestamp=1620674856899&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fnanoid%2Fdownload%2Fnanoid-3.1.23.tgz#f744086ce7c2bc47ee0a8472574d5c78e4183a81"
   integrity sha1-90QIbOfCvEfuCoRyV01ceOQYOoE=
 
-node-forge@^0.10.0:
+node-forge@~0.10.0:
   version "0.10.0"
   resolved "https://registry.npm.taobao.org/node-forge/download/node-forge-0.10.0.tgz#32dea2afb3e9926f02ee5ce8794902691a676bf3"
   integrity sha1-Mt6ir7Ppkm8C7lzoeUkCaRpna/M=

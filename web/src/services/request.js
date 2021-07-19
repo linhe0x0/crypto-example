@@ -1,8 +1,8 @@
 import axios from 'axios'
 
-import { cryptoMiddleware, generateSecret } from './crypto'
-import { exchangeMiddleware } from './exchange'
-import { signMiddleware } from './sign'
+import { useCrypto, generateSecret } from '@sqrtthree/axios-use-crypto'
+import useCryptoExchange from '@sqrtthree/axios-use-crypto-exchange'
+import useSign from '@sqrtthree/axios-use-sign'
 
 const baseURL = '/api'
 
@@ -29,19 +29,19 @@ const sendEncryptedSecret = (value) => {
 }
 
 request.interceptors.request.use(
-  signMiddleware({
+  useSign({
     secret,
   })
 )
 
 request.interceptors.request.use(
-  cryptoMiddleware({
+  useCrypto({
     secret,
   })
 )
 
 request.interceptors.request.use(
-  exchangeMiddleware({
+  useCryptoExchange({
     secret,
     getServerPublicKey,
     sendEncryptedSecret,
